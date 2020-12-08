@@ -42,8 +42,8 @@ std::unordered_map<std::string, StreamInfo> c_streams_myriad_to_pc =
     {"depth",  StreamInfo("depth",      MONO_MAX_SIZE(1,2), { MONO_RES_AUTO, 0}, 2 )},
     {"disparity_color", StreamInfo("disparity_color", MONO_MAX_SIZE(3,1), { MONO_RES_AUTO, 0, 3} )},
 
-    {"metaout",     StreamInfo("metaout",    4*1024*1024)}, // 4 mb max metaout size
-    {"previewout",  StreamInfo("previewout", 1920256)},
+    {"metaout",     StreamInfo("metaout",    20*1024*1024)}, // 4 mb max metaout size
+    {"previewout",  StreamInfo("previewout", 20*1024*1024)},
 
     {"meta_d2h",    StreamInfo("meta_d2h",   1024*1024)},
     {"jpegout",    StreamInfo("jpegout",   10*1024*1024)},
